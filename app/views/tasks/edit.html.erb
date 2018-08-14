@@ -1,0 +1,20 @@
+<div class="container">
+<h1> Edit @task.title </h1>
+  <%= form_for(@task) do |f| %>
+    <ul>
+      <li> <%= f.label :title %> </li>
+      <li> <%= f.text_field :title %> </li>
+
+      <li> <%= f.label :details %> </li>
+      <li> <%= f.text_field :details %> </li>
+      <br>
+      <li> <%= f.label :completed %> </li>
+      <li> <%= f.check_box :completed %> </li>
+
+      <li> <%= f.submit %> </li>
+    </ul>
+<% end %>
+
+</div>
+
+

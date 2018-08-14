@@ -1,0 +1,18 @@
+<div class="container">
+<h1> <%= @task[:title]  %></h1>
+
+<div class="container background-red">
+    <%= @task[:details] %>
+    </div>
+    <div class="container">
+      <% if @task[:completed] == true %>
+         <i class="far fa-check-square"></i> The task is completed
+      <% else %>
+        <i class="far fa-square"></i> The task is not completed yet
+      <% end %>
+    </div>
+      <%= link_to "Back to list", tasks_path %>
+      <%= link_to "Edit", tasks_edit_path %>
+
+</div>
+
